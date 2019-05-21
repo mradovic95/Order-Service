@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    ports:
+    - "27018:27017"
+  activemq:
+    image: webcenter/activemq
+    ports:
+    - "61613:61613"
+    - "8161:8161"
+    - "61616:61616"
